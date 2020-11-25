@@ -8,5 +8,11 @@ public class MazeGenerator {
 
     //TODO: int[][] getSpanningTree(int[][] graphMatrix)
 
-    //TODO: void fillMaze(int[][] mazeMatrix)
+    public static void fillMaze(int[][] mazeMatrix) {
+        for (int i = 0; i < mazeMatrix.length; i++) {
+            for (int j = 0; j < mazeMatrix[0].length; j++) {
+                mazeMatrix[i][j] = 1;
+            }
+        }
+    }
 }
